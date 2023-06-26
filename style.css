@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80rem;
+    margin-top: 5vh;
+    margin-inline: auto;
+}
+
+.even-columns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-flow: 1fr;
+    gap: 2rem;
+}
+
+.card {
+    width: 100%;
+    border-radius: 0.25em;
+    border: 1px solid #ac98f3;
+    padding: 2rem;
+    background: #d3e2f7;
+    display: grid;
+}
+.card-img {
+    width: 16rem;
+    aspect-ratio: 1;
+    display: block;
+    justify-self: center;
+    margin-bottom: 2em;
+
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-title {
+    font-size: 1.85rem;
+    text-transform: capitalize;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+    color: #141655;
+}
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+}
+.card-btn {
+    display: flex;
+    width: fit-content;
+    padding: 0.5em 2em;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #e4e9ff;
+    background: #3655b1;
+    border: none;
+    outline: transparent;
+    border-radius: .2em;
+}
+
+/* Skeleton */
+.skeleton {
+    position: relative;
+}
+
+.skeleton::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* border-radius: 0.5rem; */
+    z-index: 999;
+
+    background: linear-gradient(90deg, hsl(200, 20%, 40%), hsl(200, 15%, 65%), hsl(200, 20%, 40%));
+    opacity: 0.95;
+    background-size: 200%;
+    animation: skeleton 1s infinite linear;
+}
+
+@keyframes skeleton {
+    0% { background-position: 100% 0;}
+    100% { background-position: -100% 0;}
+}
+

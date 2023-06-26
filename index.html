@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton Loder</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="even-columns">
+            <div class="card">
+                <div class="card-img skeleton">
+                    <!-- image should wrap into skeleton class div  -->
+                    <img src="card-image.jpg" alt="card image">
+                </div>
+                <h2 class="card-title skeleton">This is card title nulla minima.</h2>
+                <p class="card-text skeleton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nulla minima ex non nesciunt nisi repellat? Voluptates laborum, sequi consequuntur dignissimos esse.</p>
+                <button class="card-btn skeleton">More</button>
+            </div>
+            <div class="card">
+                <div class="card-img skeleton">
+                    <!-- image should wrap into skeleton class div  -->
+                    <img src="card-image.jpg" alt="card image">
+                </div>
+                <h2 class="card-title skeleton">This is card title nulla minima.</h2>
+                <p class="card-text skeleton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nulla minima ex non nesciunt nisi repellat? Voluptates laborum, sequi consequuntur dignissimos esse.</p>
+                <button class="card-btn skeleton">More</button>
+            </div>
+            <div class="card">
+                <div class="card-img skeleton">
+                    <!-- image should wrap into skeleton class div  -->
+                    <img src="card-image.jpg" alt="card image">
+                </div>
+                <h2 class="card-title skeleton">This is card title nulla minima.</h2>
+                <p class="card-text skeleton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nulla minima ex non nesciunt nisi repellat? Voluptates laborum, sequi consequuntur dignissimos esse.</p>
+                <button class="card-btn skeleton">More</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const Skeleton = document.querySelectorAll('.skeleton')
+
+        window.addEventListener('load', ()=>{
+            Skeleton.forEach(item=>{
+                item.classList.remove('skeleton')
+            })
+        })
+    </script>
+</body>
+</html>
